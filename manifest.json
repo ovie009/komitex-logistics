@@ -1,0 +1,16 @@
+ {
+    "name": "Komitex Logistics",
+    "short_name": "Komitex",
+    "start_url": "/",
+    "scope": "/",
+    "display": "standalone",
+    "theme_color": "rgb(7, 66, 124)",
+    "background_color": "whitesmoke",
+    "icons": [
+        {
+            "src": "icons/logistics/018-motorcycle.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
