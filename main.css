@@ -1,0 +1,672 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*END OF RESET SHEET*//*END OF RESET SHEET*//*END OF RESET SHEET*//*END OF RESET SHEET*/
+/*END OF RESET SHEET*//*END OF RESET SHEET*//*END OF RESET SHEET*//*END OF RESET SHEET*/
+/*END OF RESET SHEET*//*END OF RESET SHEET*//*END OF RESET SHEET*//*END OF RESET SHEET*/
+/*END OF RESET SHEET*//*END OF RESET SHEET*//*END OF RESET SHEET*//*END OF RESET SHEET*/
+
+/*importing new font*/
+@font-face{
+    src: url(../fonts/Raleway-Regular.ttf);
+    font-family: roleway-r;
+}
+
+/*importing new font*/
+@font-face{
+    src: url(../fonts/Raleway-Bold.ttf);
+    font-family: roleway-b;
+}
+
+@font-face{
+    src: url(../fonts/Raleway-BoldItalic.ttf);
+    font-family: roleway-bi;
+}
+
+/*importing new font*/
+@font-face{
+    src: url(../fonts/Raleway-Italic.ttf);
+    font-family: roleway-i;
+}
+
+/*importing new font*/
+@font-face{
+    src: url(../fonts/Raleway-Light.ttf);
+    font-family: roleway-l;
+}
+
+@font-face{
+    src: url(../fonts/Raleway-LightItalic.ttf);
+    font-family: roleway-li;
+}
+
+.tab-container button{
+    font-family: roleway-bi;
+}
+
+.tab-container div{
+    font-family: roleway-bi;
+}
+
+s{
+    text-decoration-style: double;
+}
+
+body{
+    font-family: roleway-r;
+}
+
+.popup-background{
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 80px);
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    display: none;
+}
+
+
+button{
+    height: max-content;
+    margin: 0;
+    padding: 5px;
+    background-color: rgb(7, 66, 124);
+    border: 1px solid rgb(7, 66, 124);
+    border-radius: 2.5px;
+    color: white;
+}
+
+header{
+    position: fixed;
+    height: fit-content;
+    width: 100%;
+    z-index: 3;
+    background-color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    border-bottom: 1px solid rgb(7, 66, 124);
+}
+
+.side-nav{
+    width: 100%;
+    height: fit-content;
+    z-index: 2;
+    display: none;
+    background-color: white;
+    border-top: 1px solid rgb(7, 66, 124);
+}
+
+.side-nav-wrapper{
+    width: fit-content;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.side-nav-form-wrapper{
+    width: fit-content;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-left: auto;
+    padding: 10px;    
+}
+
+.side-nav-wrapper p{
+    color: tomato;
+}
+
+.side-nav-wrapper form{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: 10px;
+}
+
+.side-nav-wrapper form input{
+    width: 150px;
+    border-radius: 2.5px;
+    border: 1px solid rgb(7, 66, 124);
+    margin: 0;
+    margin: 0 0 10px;
+    padding: 5px;
+}
+
+.side-nav-wrapper form button{
+    height: max-content;
+    margin: 0;
+    padding: 5px;
+    background-color: rgb(7, 66, 124);
+    border: 1px solid rgb(7, 66, 124);
+    border-radius: 0 2.5px 2.5px 0;
+    color: white;
+    width: fit-content;
+}
+
+.side-nav-wrapper ul{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    display: none;
+    flex-flow: column nowrap;
+    align-items: center;
+    align-items: flex-end;
+    background-color: white;
+    background-color: rgb(7, 66, 124);
+    padding-bottom: 10px;
+}
+
+.side-nav-wrapper ul li{
+    width: 170px;
+    height: fit-content;
+    border-bottom: 1px solid rgb(7, 66, 124);
+    border-bottom: 1px solid white;
+    padding: 7.5px 0;
+}
+
+.side-nav-wrapper ul li:last-child{
+    border-bottom: none;
+}
+
+.side-nav-wrapper ul li a{
+    width: 150px;
+    width: 100%;
+    text-decoration: none;
+    color: rgb(7, 66, 124);
+    color: white;
+    padding-left: 5px;
+}
+
+.main-nav{
+    margin: auto;
+    height: 80px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.error{
+    color: tomato;
+    margin: 7.5px 0;
+}
+
+.logo-container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.dropdown{
+    background-color: unset;
+    border: none;
+    display: none;
+}
+
+.dropdown img{
+    width: 35px;
+    transform: rotateZ(90deg);
+}
+
+.logo-container img{
+    width: 50px;
+    margin: 7.5px;
+}
+
+.logo{
+    width: 150px;
+    height: 50px;
+    background-image: url(../images/logo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+}
+
+.form-wrapper{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-wrapper form{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.form-wrapper p{
+    color: tomato;
+}
+
+.form-wrapper form input{
+    width: 120px;
+    border-radius: 2.5px;
+    border: 1px solid rgb(7, 66, 124);
+    margin: 0;
+    margin-left: 5px;
+    padding: 5px;
+}
+
+#nav-password{
+    border-radius: 2.5px 0 0 2.5px;
+}
+
+.form-wrapper form button{
+    height: max-content;
+    margin: 0;
+    padding: 5px;
+    background-color: rgb(7, 66, 124);
+    border: 1px solid rgb(7, 66, 124);
+    border-radius: 0 2.5px 2.5px 0;
+    color: white;
+}
+
+.link-wrapper{
+    height: 40px;
+    width: 100%;
+}
+
+.link-wrapper ul{
+    background-color: unset;
+    background-color: rgb(7, 66, 124);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.link-wrapper ul li{
+    width: 11.11%;
+    padding: 5px;
+    transition: ease-in;
+    border-right: 1px solid rgb(7, 66, 124);
+    border-right: 1px solid white;
+    display: flex;
+    justify-content: center;
+}
+
+.link-wrapper ul li:last-child{
+    border: none;
+}
+
+.link-wrapper ul li a{
+    color: rgb(7, 66, 124);
+    color: white;
+    text-decoration: none;
+}
+
+main{
+    min-height: 100vh;
+    background-color: whitesmoke;
+    padding-top: 140px;
+}
+
+.front-page-info {
+    position: relative;
+}
+
+.front-page-info h1{
+    color: rgb(7, 66, 124);
+}
+
+.front-page-info{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.select-accountType{
+    width: 30%;
+    min-width: 300px;
+    height: fit-content;
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px gray;
+    border-radius: 5px;
+}
+
+.radio-wrapper{
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.radio-wrapper p{
+    color: tomato;
+    font-size: medium;
+}
+
+.radio-wrapper:last-child{
+    border: none;
+}
+
+/*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*/
+/*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*/
+/*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*/
+/*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*/
+/*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*/
+
+footer{
+    background-color: rgb(30, 30, 30);
+    background-color: white;
+    height: fit-content;
+    width: 100%;
+    border-top: 1px solid darkgray;
+}
+
+.footer-wrapper{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-content: space-between;
+}
+
+footer .footer-wrapper div, footer .footer-wrapper form{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-wrapper div:nth-child(1){
+    height: 20px;
+    border-bottom: 1px solid white;
+    border-bottom: 1px solid darkgray;
+}
+
+.footer-wrapper div:nth-child(2){
+    margin: 10px 0;
+}
+
+.footer-wrapper div:nth-child(1) ul li a{
+    line-height: 20px;
+    color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+    transition: ease-in;
+    text-decoration: none;
+}
+
+.footer-wrapper div:nth-child(1) ul li a:hover{
+    font-size: 1.1em;
+}
+
+.footer-wrapper div ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-wrapper form{
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.footer-wrapper form label{
+    width: 100%;
+    text-align: center;
+    line-height: 20px;
+    font-size: 1.2em;
+    color: white;
+    color: black;
+}
+
+.footer-wrapper form button{
+    background-color: seagreen;
+    background-color: tomato;
+    background-color: rgb(7, 66, 124);
+    border-radius: 0 10px 10px 0;
+    border: none;
+    box-shadow:  0 0 5px darkgray;
+    color: white;
+    font-size: 1.1em;
+    margin: 0;
+    height: max-content;
+    height: 35px;
+}
+
+textarea{
+    resize: none;
+    border-radius: 10px 0 0 10px;
+}
+
+.footer-wrapper div ul li{
+    padding: 0 30px;
+}
+
+.footer-wrapper div:first-child ul li:nth-child(2){
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-left: 1px solid darkgray;
+    border-right: 1px solid darkgray;
+}
+
+.footer-wrapper div:nth-child(2) ul li a img{
+    margin: 0;
+    padding: 0;
+    width: 20px;
+}
+
+.footer-wrapper div:nth-child(2) ul li a span{
+    color: white;
+    color: black;
+    margin: 2.5px 0;
+    flex-basis: 100%;
+    font-size: small;
+}
+
+.footer-wrapper div:nth-child(2) ul li{
+    width: 70px;
+    padding: 0;
+}
+
+.footer-wrapper div:nth-child(2) ul li a{
+    width: 100%;
+    flex-basis: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.phone{
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    margin-top: 20px;
+    height: 30px;
+}
+
+.phone img{
+   width: 20px;
+}
+
+.phone p{
+    line-height: 20px;
+    color: white;
+    color: black;
+}
+
+.phone *{
+    margin-top: 10px;
+}
+
+.footer-wrapper div:last-child{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    border-top: 1px solid white;
+    border-top: 1px solid darkgray;
+    margin-top: 10px;
+}
+
+.footer-wrapper div:last-child p{
+    line-height: 20px;
+    color: white;
+    color: black;
+}
+
+.contactUs-send{
+    height: 100%;
+}
+
+/*MEDIA QUERY*//*MEDIA QUERY*//*MEDIA QUERY*//*MEDIA QUERY*/
+/*MEDIA QUERY*//*MEDIA QUERY*//*MEDIA QUERY*//*MEDIA QUERY*/
+
+@media only screen and (max-width: 768px){   
+    .dropdown{
+        display: unset;
+    }    
+
+    .form-wrapper{
+        display: none;
+    }
+
+    .link-wrapper{
+        display: none;
+    }
+
+    .side-nav-wrapper ul{
+        display: flex;
+    }
+
+    main{
+        padding-top: 90px;
+    }
+    
+}
+
+@media all and (display-mode: standalone){
+    body{
+        margin: 0;
+    }
+}

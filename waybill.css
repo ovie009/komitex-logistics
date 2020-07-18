@@ -1,0 +1,482 @@
+.success-notification, .error-notification, .error{
+    width: 40%;
+    min-width: 300px;
+    height: 40px;
+    background-color: lightgreen;
+    border-radius: 5px;
+    border: 1px groove seagreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    box-shadow: 0 0 5px seagreen;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: small;
+}
+
+.error-notification, .error{
+    background-color: pink;
+    border: 1px groove tomato;
+    box-shadow: 0 0 5px pink;
+    color: black;
+}
+
+.tab-container{
+    width: fit-content;
+    height: 37.5px;
+    margin: 10px auto 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    flex-flow: nowrap;
+    position: relative;
+    width: 40%;
+}
+
+.tab-container div{
+    width: 120px;
+    text-align: center;
+    height: 100%;
+    color: rgb(7, 66, 124);
+    background-color: white;
+    border: none;
+    margin: 0;
+    position: absolute;
+    border-top: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    left: 0;
+    bottom: -1.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: smaller;
+}
+
+#products-tab{
+    border-radius: 15px 15px 0 0;
+    z-index: 1;
+}
+
+#waybill-tab{
+    border-radius: 15px 15px 0 0;
+    left: 100px;
+    z-index: 0.4;
+    border-bottom: 1px solid lightgray;
+    background-color: rgb(230, 230, 230);
+}
+
+.waybill-page-info h1{
+    color: rgb(7, 66, 124);
+}
+
+.waybill-page-info{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+
+.products-div, .waybill-div{
+    display: flex;
+    width: 40%;
+    min-width: 300px;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    background-color: white;
+    border-radius: 0 5px 5px 5px;
+    /*box-shadow: 0 0 5px gray;*/
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0 auto 10px;
+    min-height: 80vh;
+    max-height: fit-content;
+}
+
+.waybill-div{
+    display: none;
+}
+
+.add-new-form{
+    width: 100%;
+}
+
+.add-new-form button{
+    width: 100%;
+    text-align: center;
+    color: rgb(7, 66, 124);
+    background-color: white;
+    height: 30px;
+}
+
+.display-wrapper{
+    /*display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;*/
+    padding: 10px 0;
+}
+
+.display-wrapper input{
+    width: 25px;
+    box-sizing: border-box;
+    padding: 2px;
+    border: 1px solid lightgray;
+    border-radius: 2.5px;
+}
+
+.display-wrapper button{
+    color: rgb(7, 66, 124);
+    border: 1px solid lightgray;
+    background-color: white;
+    width: 100px;
+    height: 30px;
+    box-sizing: border-box;
+}
+
+.display-image{
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.optional{
+    font-size: small;
+    color: tomato;
+    margin: 0 5px;
+}
+
+.product-input{
+    padding: 5px;
+    width: 150px;
+    border: 1px solid gray;
+    margin: 0;
+    resize: none;
+    height: 60px;
+    box-sizing: border-box;
+    border-radius: 2.5px 2.5px 0 2.5px;
+}
+
+#product-price{
+    width: 70px;
+    height: 30px;
+    border-radius: 0 2.5px 2.5px 0;
+}
+
+.button-wrapper{
+    width: fit-content;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+#submit-product{
+    margin: 0 10px;
+    height: 30px;
+    width: 70px;
+    border-radius: 2.5px;
+}
+
+#more-prices{
+    margin: 0;
+    height: 30px;
+    width: fit-content;
+    color: rgb(7, 66, 124);
+    background-color: white;
+    border-radius: 2.5px;
+}
+
+.main-product-wrapper{
+    width: fit-content;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+.main-product-wrapper div{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.added-input{
+    margin: 10px 0;
+}
+
+.added-input input{
+    padding: 5px;
+    width: 80px;
+    border: 1px solid gray;
+    margin: 0;
+    margin-right: 10px;
+    height: 30px;
+    box-sizing: border-box;
+    border-radius: 2.5px;
+}
+
+#quantity{
+    width: 50px;
+}
+
+.added-input button{
+    color: tomato;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    box-sizing: border-box;
+    padding: 0;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid tomato;
+}
+
+.upload-product, .display-wrapper{
+    display: none;
+}
+
+.products-container{
+    width: 100%;
+    min-height: 150px;
+    max-height: fit-content;
+    margin: 0;
+}
+
+.product-holder{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 2.5px gray;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    margin: 20px 0;
+}
+
+.product-main-details{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.product-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    border: 0.5px solid lightgray;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.product-details p:first-child{
+    padding: 2.5px;
+}
+
+img[id^="down-arrow-"]{
+    width: 10px;
+    margin-left: 10px;
+    transform: rotateZ(180deg);
+}
+
+div[id^="edit-price-"]{
+    display: none;
+}
+
+div[id^="edit-price-"] form{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div[id^="edit-price-"] form input{
+    width: 65px;
+    height: 30px;
+    border: 1px solid lightgray;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 0;
+    border-radius: 2.5px 0 0 2.5px;
+}
+
+div[id^="edit-price-"] form button{
+    width: fit-content;
+    height: 30px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 0;
+    border-radius: 0 2.5px 2.5px 0;
+}
+
+form[class^="product-image-overlay"]{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.6);
+    position: relative;
+    visibility: hidden;
+}
+
+form[class^="product-image-overlay"] button{
+    color: rgb(7, 66, 124);
+    background-color: white;
+    border: 1px solid lightgray;
+    position: absolute;
+    top: 2.5px;
+    right: 2.5px;
+
+}
+
+.product-details{
+    margin: 0 10px;
+    height: 100px;
+    width: calc(100% - 100px);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+#show-discount{
+    color: rgb(7, 66, 124);
+    background-color: unset;
+    border: none;
+    border-top: 1px solid lightgray;
+}
+
+#hide-discount{
+    width: 100%;
+    height: 22.5px;
+    background-color: unset;
+    color: rgb(7, 66, 124);
+    border: none;
+    margin-top: 10px;
+    border-top: 1px solid lightgray;
+}
+
+#show-discount img, #hide-discount img{
+    width: 10px;
+    margin: 0 10px;
+}
+
+#hide-discount img{
+    transform: rotateZ(180deg);
+}
+
+#send-waybill{
+    position: absolute;
+    top: 2.5px;
+    right: 2.5px;
+    color: seagreen;
+    color: rgb(7, 66, 124);
+    background-color: white;
+    border: 1px solid lightgray;
+    border: 1px solid rgb(7, 66, 124);
+}
+
+.dropdown-product{
+    padding: 0;
+    width: 100%;
+    height: fit-content;
+    display: none;
+}
+
+.discount-list{
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 2.75px;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
+
+.discount-list input{
+    width: 70px;
+    padding: 5px;
+    height: 30px;
+    box-sizing: border-box;
+    border: none;
+    background-color: whitesmoke;
+}
+
+.discount-list label{
+    margin: 0 5px;
+    font-size: small;
+}
+
+.discount-list button{
+    margin-left: 10px;
+    color: rgb(7, 66, 124);
+    background-color: white;
+    border: 1px solid lightgray;
+}
+
+input[id^="qty"]{
+    width: 40px;
+}
+
+#delete-discount{
+    color: tomato;
+}
+
+button[id^="submit-discount-"]{
+    color: white;
+    background-color: rgb(7, 66, 124);
+    display: none;
+}
+
+.no-discount-notice{
+    width: 50%;
+    font-size: small;
+    color: tomato;
+    text-align: center;
+}
+
+#addmore-discount{
+    width: fit-content;
+    text-align: center;
+    margin: 0;
+}
+
+div[id^="hiding-"]{
+    display: none;
+}
+
+div[id^="hiding-"] form input{
+    background-color: white;
+    border: 1px solid lightgray;
+}
+
+#hidden-submit{
+    color: white;
+    background-color: rgb(7, 66, 124);
+}
+
+@media only screen and (max-width: 768px){   
+    .waybill-div, .products-div, .error-notification, .success-notification, .error, .tab-container{
+        min-width: 90vw;
+    }
+    
+}
